@@ -7,7 +7,7 @@ const bruteForce = (elements) => {
         for (let j = i; j < elements.length; j++) {
             let current_sum = 0;
 
-            for (k = i; k <= j; k++) {
+            for (let k = i; k <= j; k++) {
                 current_sum += elements[k];
             }
 
@@ -28,7 +28,6 @@ console.log("brute", bruteForce(elements));
 
 
 
-``
 
 
 const maxSubArray = (elements) => {
@@ -55,7 +54,7 @@ const maxSubArray = (elements) => {
 
 /*
 
-    i/p:- [8, 1, -3, 4, -1, 2, 1, -5, 4]
+    i/p:- [-2, 1, -3, 4, -1, 2, 1, -5, 4]
 
     current = -2
     maxSum = -2
